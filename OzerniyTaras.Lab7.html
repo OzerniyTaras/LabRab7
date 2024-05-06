@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p><center><h2>Форма замовлення</h2></p></center>
+<form action="/submit_order">
+    <label for="bank_account">Номер банківського рахунку:</label><br>
+       <input type="text" id="bank_account" name="bank_account"><br>
+    <label for="user_id">Особистий номер користувача:</label><br>
+   <input type="text" id="user_id" name="user_id"><br>
+      <label for="products">Товари:</label><br>
+      <select id="products" name="products" multiple>
+         <option value="product1">Залік по фізиці</option>
+     <option value="product2">Залік по виш/мат</option>
+           <option value="product3">Залік по методам</option>
+      <option value="product3">Залік по фізрі</option>
+       <option value="product3">Залік по історії</option>
+     </select><br>
+   <label for="comments">Коментарі:</label><br>
+     <textarea id="comments" name="comments"></textarea><br>
+    <label for="payment_type">Тип оплати:</label><br>
+     <input type="radio" id="cash" name="payment_type" value="cash">
+       <label for="cash">Готівковий розрахунок</label><br>
+     <input type="radio" id="cashless" name="payment_type" value="cashless">
+     <label for="cashless">Безготівковий розрахунок</label><br>
+    <label for="additional_info">Додаткова інформація:</label><br>
+   <input type="checkbox" id="balance_info" name="additional_info" value="balance_info">
+      <label for="balance_info">Дані про залишки на рахунку</label><br>
+    <input type="checkbox" id="payment_history" name="additional_info" value="payment_history">
+      <label for="payment_history">Список останніх виплат по рахунку</label><br>
+      <input type="submit" value="Надіслати замовлення">
+</form>
+</body>
+</html>
